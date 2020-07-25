@@ -1,0 +1,95 @@
+/* ----------
+font-family: 'Lobster', cursive;
+font-family: 'Merriweather', serif;
+------------*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'Merriweather', serif;
+}
+
+body h1,
+body h2{
+    font-family: 'Lobster', cursive;
+}
+
+.main-head{
+    background-image: url("../img/web-bg.jpg");
+    height: 100vh;
+    width: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header .main-head h1{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    font-size: 36px;
+    border: 2px solid black;
+    padding: 20px 30px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.main-head h1:hover{
+    background-color: black;
+    color: white;    
+    cursor: pointer;
+}
+
+.img-placeholder{
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px;
+}
+.img-placeholder img{
+    width: 70vh;    
+    height: 50vh;
+    margin: 20px;
+}
+
+.first-img{
+    text-align: left;
+    border-left: 4px solid black;
+    padding: 20px;
+}
+
+.second-img{
+    text-align: right;
+    border-right: 4px solid black;
+    padding: 20px;
+}
+
+h2{
+    font-size: 35px;
+    
+}
+
+.end{
+    background-color: black;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
