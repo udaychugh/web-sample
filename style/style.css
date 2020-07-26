@@ -51,35 +51,6 @@ header .main-head h1{
     cursor: pointer;
 }
 
-.img-placeholder{
-    height: auto;
-    width: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin: 20px;
-}
-.img-placeholder img{
-    width: 70vh;    
-    height: 50vh;
-    margin: 20px;
-}
-
-.first-img{
-    text-align: left;
-    border-left: 4px solid black;
-    padding: 20px;
-}
-
-.second-img{
-    text-align: right;
-    border-right: 4px solid black;
-    padding: 20px;
-}
 
 h2{
     font-size: 35px;
@@ -92,4 +63,71 @@ h2{
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
+}
+
+
+
+.section {
+  position: relative;
+  max-width: 100%;
+  padding: 40px;
+  margin: auto;
+  background-color: white;
+  color: black;
+}
+.section.bg-static {
+  min-height:50vh;
+  background-color: #85c1e9;
+  background-image: url("https://www.dropbox.com/s/v4u0mpzfplgjxaq/img-blog-background-move-scrolling-bg.png?raw=1");
+  background-size: cover;
+  background-position: center;
+}
+.section .bg-move {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: auto;
+  width: 100%;
+  background-image: url("https://www.dropbox.com/s/isdqow2394y3t35/img-blog-background-move-scrolling-boat.png?raw=1");
+  background-size: cover;
+  background-position: center;
+}
+
+.section2 {
+  position: relative;
+  max-width: 100%;
+  padding: 40px;
+  margin: auto;
+  background-color: white;
+  color: black;
+}
+.section2.bg-static2 {
+  min-height:50vh;
+  background-color: #85c1e9;
+  background-image: url(../img/road.jpg);
+  background-size: cover;
+  background-position:bottom;
+}
+.section2 .bg-move2 {
+  position: absolute;
+  top: 15%;
+  bottom: 0;
+  left: auto;
+  width:400px;
+  background-image: url(../img/car.png);
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.space{
+    padding: 20px;
+}
+.space h1{
+    margin:30px 10px;
+}
+
+.space p{
+    padding: 20px;
+    margin-top: 20px;
 }
